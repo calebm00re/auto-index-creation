@@ -1,0 +1,128 @@
+<3>
+In computer science, a data structure is a data organization, management,
+and storage format that enables efficient access and modification. More
+precisely, a data structure is a collection of data values,the relationships
+among them, and the functions or operations that can be applied to the data.
+
+<13>
+Data structures serve as the basis for abstract data types (ADT). The ADT
+defines the logical form of the data type. The data structure implements
+the physical form of the data type.
+
+Different types of data structures are suited to different kinds of
+applications, and some are highly specialized to specific tasks. For
+example, relational databases commonly use B-tree indexes for data
+retrieval, while compiler implementations usually use hash tables
+to look up identifiers. 2-3 tree
+
+<54>
+Data structures are generally based on the ability of a computer
+to fetch and store data at any place in its memory, specified by
+a pointer—a bit string, representing a memory address, that can
+be itself stored in memory and manipulated by the program. Thus,
+the array and record data structures are based on computing the
+addresses of data items with arithmetic operations, while the
+linked data structures are based on storing addresses of data items
+within the structure itself.
+<55>
+The implementation of a data structure usually requires writing a set
+of procedures that create and manipulate instances of that structure.
+The efficiency of a data structure cannot be analyzed separately from
+those operations. This observation motivates the theoretical concept of
+an abstract data type, a data structure that is defined indirectly by
+the operations that may be performed on it, and the mathematical
+properties of those operations (including their space and time cost).
+
+<32>
+A linked list is a collection of structures ordered not by their
+physical placement in memory but by logical links that are stored
+as part of the data in the structure itself. It is not necessary
+that it should be stored in the adjacent memory locations. Every
+structure has a data field and an address field. The Address field
+contains the address of its successor.
+
+<98>
+Linked list can be singly, doubly or multiply linked and can either
+be linear or circular.
+<67>
+Compared to arrays, linked data structures allow more flexibility
+in organizing the data and in allocating space for it. In arrays,
+the size of the array must be specified precisely at the beginning,
+which can be a potential waste of memory, or an arbitrary limitation
+which would later hinder functionality in some way. A linked data
+structure is built dynamically and never needs to be bigger than
+the program requires. It also requires no guessing at creation time,
+in terms of how much space must be allocated.
+<12>
+This is a feature that is key in avoiding wastes of memory. In an
+array, the array elements have to be in a contiguous (connected
+and sequential) portion of memory. But in a linked data structure,
+the reference to each node gives users the information needed to
+find the next one. The nodes of a linked data structure can also
+be moved individually to different locations within physical memory
+without affecting the logical connections between them, unlike arrays.
+With due care, a certain process or thread can add or delete nodes in
+one part of a data structure even while other processes or threads
+are working on other parts.
+<11>
+On the other hand, access to any particular node in a linked data
+structure requires following a chain of references that are stored
+in each node. If the structure has n nodes, and each node contains
+at most b links, there will be some nodes that cannot be reached in
+less than logb n steps, slowing down the process of accessing these
+nodes - this sometimes represents a considerable slowdown, especially
+in the case of structures containing large numbers of nodes.
+<10>
+For many structures, some nodes may require worst case up to n−1 steps.
+In contrast, many array data structures allow access to any element
+with a constant number of operations, independent of the number of entries.
+Broadly the implementation of these linked data structure is through
+dynamic data structures. It gives us the chance to use particular
+space again. Memory can be utilized more efficiently by using these
+data structures. Memory is allocated as per the need and when memory
+is not further needed, deallocation is done.
+
+<20>
+Linked data structures may also incur in substantial memory allocation
+overhead (if nodes are allocated individually) and frustrate memory
+paging and processor caching algorithms (since they generally have poor
+locality of reference). In some cases, linked data structures may also
+use more memory (for the link fields) than competing array structures.
+This is because linked data structures are not contiguous. Instances
+of data can be found all over in memory, unlike arrays.
+<21>
+In arrays, nth element can be accessed immediately, while in a
+linked data structure we have to follow multiple pointers so element
+access time varies according to where in the structure the element is.
+<22>
+In some theoretical models of computation that enforce the constraints
+of linked structures, such as the pointer machine, many problems
+require more steps than in the unconstrained random access machine model.
+
+<61>
+In computer science, a binary tree is a tree data structure in which
+each node has at most two children, which are referred to as the left
+child and the right child. A recursive definition using just set theory
+notions is that a (non-empty) binary tree is a tuple (L, S, R), where L
+and R are binary trees or the empty set and S is a singleton set containing
+the root. Some authors allow the binary tree to be the empty set as
+well.
+<62>
+From a graph theory perspective, binary (and K-ary) trees as defined
+here are actually arborescences. A binary tree may thus be also called
+a bifurcating arborescence—a term which appears in some very old
+programming books, before the modern computer science terminology
+prevailed. It is also possible to interpret a binary tree as an
+undirected, rather than a directed graph, in which case a binary
+tree is an ordered, rooted tree. Some authors use rooted binary
+tree instead of binary tree to emphasize the fact that the tree is
+rooted, but as defined above, a binary tree is always rooted. A binary
+tree is a special case of an ordered K-ary tree, where k is 2.
+<63>
+In mathematics, what is termed binary tree can vary significantly
+from author to author. Some use the definition commonly used in
+computer science, but others define it as every non-leaf having
+exactly two children and don't necessarily order (as left/right) the
+children either.
+
+<-1>

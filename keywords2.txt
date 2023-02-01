@@ -1,0 +1,25 @@
+computer
+storage
+abstract
+B-Tree
+storing
+structure
+data
+efficiency
+ADT
+databases
+Data structures
+Abstract data type
+Linked list
+dynamic
+memory
+array
+linked data structure
+random access
+pointer
+graph theory
+arborescence
+K-ary tree
+directed graph
+paging
+2-3 tree
